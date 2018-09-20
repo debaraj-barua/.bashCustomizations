@@ -11,3 +11,6 @@ alias .5='cd ../../../../..'
 
 # Resume wget by default
 alias wget='wget -c'
+
+# Restart network-manager
+alias net-restart='sudo service network-manager restart'
