@@ -36,4 +36,4 @@ custom bashrc files and aliases
 `source ~/.anaconda_with_ros_wrapper.bash`
 
 ## Random
-In addition to useful bash scripts, the `random` directory has a list of known issues, workarounds and scripts not related to bash.
+In addition to useful bash scripts, the [random](random/README.md) directory has a list of known issues, workarounds and scripts not related to bash.
