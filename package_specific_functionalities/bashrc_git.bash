@@ -1,8 +1,3 @@
-# Source bash aliases
-if [ -f ~/.bash_aliases ]; then
-    . ~/.bash_aliases
-fi
-
 # For GIT Status
 if [ ! -f ~/.bash_git ]
 then
@@ -34,19 +29,19 @@ fi
 # '%' if un-tracked files
 function prompt {
    local BLACK="\[\033[0;30m\]"
-   local RED="\[\033[0;31m\]"
-   local GREEN="\[\033[0;32m\]"
+   local RED="\[\033[1;31m\]"
+   local GREEN="\[\033[1;32m\]"
    local YELLOW="\[\033[0;33m\]"
-   local BLUE="\[\033[0;34m\]"
+   local BLUE="\[\033[1;34m\]"
    local PURPLE="\[\033[0;35m\]"
    local CYAN="\[\033[0;36m\]"
    local WHITE="\[\033[0;37m\]"
    local WHITEBOLD="\[\033[1;37m\]"
-   local __cur_location="\[\033[01;33m\]\w"
-   local __git_branch_color="\[\033[31m\]"
-   local __user_and_host="\[\033[01;32m\]\u@\h"
+   local __cur_location="$BLUE\w"
+   local __git_branch_color="$RED"
+   local __user_and_host="$GREEN\u@\h"
 
-   export PS1="$__user_and_host\$ $__cur_location $__git_branch_color\$(git_prompt_info)${WHITE} \$ "
+   export PS1="$__user_and_host\:$__cur_location$__git_branch_color\$(git_prompt_info)${WHITE} \$ "
 }
 
 prompt
