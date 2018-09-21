@@ -1,7 +1,7 @@
 # bashCustomizations
 custom bashrc files and aliases
 
-# Instruction
+## Instructions
 - Clone the repository.
   ```bash
   cd ~ && git clone git@github.com:debaraj-barua/.bashCustomizations.git
@@ -34,3 +34,6 @@ custom bashrc files and aliases
   1. Change `_ROS_CONDA_PATH` in [conda_with_ros file](package_specific_functionalities/conda_with_ros.bash) _line 23_ to the path of your Anaconda bin folder (if you didn't install it to `~/anaconda3`)
   1. Add the scripts mentioned above **_before any_** ros setup bash files are sourced
 `source ~/.anaconda_with_ros_wrapper.bash`
+
+## Random
+In addition to useful bash scripts, the `random` directory has a list of known issues, workarounds and scripts not related to bash.
