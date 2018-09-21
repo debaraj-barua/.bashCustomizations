@@ -11,20 +11,21 @@ custom bashrc files and aliases
   # ---------------------------------------------------------------------------------------
   # bashCustomizations
 
-  if [  -d /home/"$USER"/.bashCustomizations/ ]; then
+  if [  -d "$HOME"/.bashCustomizations/ ]; then
       # npm functionalities
-    . /home/"$USER"/.bashCustomizations/package_specific_functionalities/bashrc_npm.bash
+    . "$HOME"/.bashCustomizations/package_specific_functionalities/bashrc_npm.bash
 
     # git functionalities
-    . /home/"$USER"/.bashCustomizations/package_specific_functionalities/bashrc_git.bash
+    . "$HOME"/.bashCustomizations/package_specific_functionalities/bashrc_git.bash
 
     # conda with ros functionalities
-    . /home/"$USER"/.bashCustomizations/package_specific_functionalities/conda_with_ros.bash
+    . "$HOME"/.bashCustomizations/package_specific_functionalities/conda_with_ros.bash
     
     # generic aliases
-    . /home/"$USER"/.bashCustomizations/aliases/generic_aliases.bash
+    . "$HOME"/.bashCustomizations/aliases/generic_aliases.bash
   fi
   # ---------------------------------------------------------------------------------------
+
   ```
 
   ## [Note] Using conda with ROS functionality
