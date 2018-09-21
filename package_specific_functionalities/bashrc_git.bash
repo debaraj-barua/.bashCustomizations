@@ -1,3 +1,4 @@
+# source: https://gist.github.com/nitred/714f15f24c67e1c91b7efc106bc535c6
 # For GIT Status
 if [ ! -f ~/.bash_git ]
 then
