@@ -42,7 +42,7 @@ function prompt {
    local __git_branch_color="$RED"
    local __user_and_host="$GREEN\u@\h"
    
-   export PS1="\e]2;\u@\h:\w\a$__user_and_host${WHITE}:$__cur_location$__git_branch_color\$(git_prompt_info)${WHITE} \$"
+   export PS1="\[\e]2;\u@\h:\w\a\]$__user_and_host${WHITE}:$__cur_location$__git_branch_color\$(git_prompt_info)${WHITE} \$ "
 }
 
 prompt
