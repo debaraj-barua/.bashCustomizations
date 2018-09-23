@@ -3,13 +3,17 @@ custom bashrc files and aliases
 
 <h1>Table Of Content</h1>
 
-- [Getting started and installation](#getting-started-and-installation)
-  - [[Note] Using conda with ROS functionality](#note-using-conda-with-ros-functionality)
+- [Getting Started and Installation](#getting-started-and-installation)
+  - [[Note] Using Conda with ROS Functionality](#note-using-conda-with-ros-functionality)
   - [[Note] Random](#note-random)
-- [How to use?](#how-to-use)
+- [How To Use?](#how-to-use)
   - [Aliases Defined](#aliases-defined)
+  - [Package Specific Functionalities](#package-specific-functionalities)
+    - [Git](#git)
+    - [Node Package Manager (*npm*)](#node-package-manager-npm)
+    - [Using Anaconda with ROS](#using-anaconda-with-ros)
 
-# Getting started and installation
+# Getting Started and Installation
 - Clone the repository.
   ```bash
   cd ~ && git clone git@github.com:debaraj-barua/.bashCustomizations.git
@@ -36,7 +40,7 @@ custom bashrc files and aliases
 
   ```
 
-  ## [Note] Using conda with ROS functionality
+  ## [Note] Using Conda with ROS Functionality
   This has been taken from [StefanFabian's gist](https://gist.github.com/StefanFabian/17fa715e783cd2be6a32cd5bbb98acd9#file-anaconda_with_ros_wrapper-bash)
 
   1. Remove the line that adds the anaconda bin folder to your PATH in the ~/.bashrc file (if you've let anaconda add itself to the PATH during installation)
@@ -46,7 +50,7 @@ custom bashrc files and aliases
   ## [Note] Random
   In addition to useful bash scripts, the [random](random/README.md) directory has a list of known issues, workarounds and scripts not related to bash.
 
-# How to use?
+# How To Use?
 
   ## Aliases Defined
   | &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;&nbsp; &nbsp; &nbsp; &nbsp; &nbsp;&nbsp; &nbsp; &nbsp; &nbsp; &nbsp;&nbsp; &nbsp; &nbsp; &nbsp; &nbsp;&nbsp; &nbsp; &nbsp; &nbsp; &nbsp;&nbsp; &nbsp; &nbsp; &nbsp; &nbsp;&nbsp; Command  &nbsp; &nbsp; &nbsp; &nbsp;&nbsp; &nbsp; &nbsp; &nbsp; &nbsp;&nbsp; &nbsp; &nbsp; &nbsp; &nbsp;&nbsp; &nbsp; &nbsp; &nbsp; &nbsp;&nbsp; &nbsp; &nbsp; &nbsp; &nbsp;&nbsp; &nbsp; &nbsp; &nbsp; &nbsp;| &nbsp; &nbsp; &nbsp;&nbsp; &nbsp; &nbsp; Alias &nbsp; &nbsp;&nbsp; &nbsp; &nbsp; &nbsp; &nbsp;|
@@ -74,3 +78,22 @@ custom bashrc files and aliases
   | <b>Using Anaconda with ROS:</b>      |                  |
   | activate  anaconda environment       | release-the-snake| 
   | deactivate  anaconda environment     | cage-the-snake   | 
+
+  ## Package Specific Functionalities
+  
+  ### Git
+  - Update prompt when in a git repository.
+  - Add *branch details* to prompt.
+  - Prompts updated according to git status
+    - **'*'** for un-staged changes
+    - **'+'** for staged changes
+    - **'$'** if something is stashed
+    - **'%'** if there are any un-tracked files
+  
+  ### Node Package Manager (*npm*)
+  - Add functionality to enable auto complete features for npm cli.
+  - Sets npm install path to home
+
+  ### Using Anaconda with ROS
+  - As described before, this enables usage of anaconda for ROS users without running into conflicts.
+  - Enable and disable *conda* environments via the aliases mentioned in the table above.
