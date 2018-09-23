@@ -25,6 +25,7 @@ then
   _ROS_CONDA_ALIASES=''
   _ROS_CONDA_RELEASED_MANUALLY=0
   _ROS_CONDA_PYTHONPATH_WITHOUT_ROS=$PYTHONPATH
+  _PS1=$PS1
 fi
 
 function _ROS_CONDA_addAliases {
@@ -74,9 +75,12 @@ function _ROS_CONDA_ensureCondaInPath {
     # Backup and clear python path to keep ros from checking ros directories for python modules
     _ROS_CONDA_PYTHONPATH_BACKUP=$PYTHONPATH
     export PYTHONPATH=$_ROS_CONDA_PYTHONPATH_WITHOUT_ROS
-
+    
     # Unalias the stuff
     _ROS_CONDA_removeAliases
+
+    # add conda identifier to prompt
+    export PS1="\[\033[0;36m\][conda] $_PS1"
 
     return 0 # true
   fi
@@ -100,7 +104,11 @@ function _ROS_CONDA_removeCondaFromPath {
     # Restore ROS PYTHONPATH
     export PYTHONPATH=$_ROS_CONDA_PYTHONPATH_BACKUP
     _ROS_CONDA_addAliases
-  fi
+
+    # remove conda identifier from prompt
+    export PS1="$_PS1"
+
+  fi 
 
   _ROS_CONDA_ADDED=0
 }
