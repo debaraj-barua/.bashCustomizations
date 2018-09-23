@@ -48,25 +48,30 @@ custom bashrc files and aliases
   In addition to useful bash scripts, the [random](random/README.md) directory has a list of known issues, workarounds and scripts not related to bash.
 
 # How to use?
+
   ## Aliases Defined
-  | Command                              | Alias       |
-  |--------------------------------------|-------------|
-  | <b>Get rid of command not found:</b> |             |
-  | cd..                                 | cd ..       |
-  |                                      |             |
-  | <b>Quicker change directory:</b>     |             |
-  | cd ..                                | ..          |
-  | cd ../..                             | ...         |
-  | cd ../../..                          | ....        |
-  | cd ../../../..                       | .....       |
-  |                                      |             |
-  | <b>Resume wget by default:</b>       |             |
-  | wget -c                              | wget        |
-  |                                      |             |
-  | <b>Restart network-manager:</b>      |             |
-  | sudo service network-manager restart | net-restart |
-  |                                      |             |
-  | <b>Quicker apt commands:</b>         |             |
-  | sudo apt update                      | update      |
-  | sudo apt upgrade                     | upgrade     |
-  | sudo apt install                     | a-install   |
+  | &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;&nbsp; &nbsp; &nbsp; &nbsp; &nbsp;&nbsp; &nbsp; &nbsp; &nbsp; &nbsp;&nbsp; &nbsp; &nbsp; &nbsp; &nbsp;&nbsp; &nbsp; &nbsp; &nbsp; &nbsp;&nbsp; &nbsp; &nbsp; &nbsp; &nbsp;&nbsp; Command  &nbsp; &nbsp; &nbsp; &nbsp;&nbsp; &nbsp; &nbsp; &nbsp; &nbsp;&nbsp; &nbsp; &nbsp; &nbsp; &nbsp;&nbsp; &nbsp; &nbsp; &nbsp; &nbsp;&nbsp; &nbsp; &nbsp; &nbsp; &nbsp;&nbsp; &nbsp; &nbsp; &nbsp; &nbsp;| &nbsp; &nbsp; &nbsp;&nbsp; &nbsp; &nbsp; Alias &nbsp; &nbsp;&nbsp; &nbsp; &nbsp; &nbsp; &nbsp;|
+  |--------------------------------------|------------------|
+  | <b>Get rid of command not found:</b> |                  |
+  | cd..                                 | cd ..            |
+  |                                      |                  |
+  | <b>Quicker change directory:</b>     |                  |
+  | cd ..                                | ..               |
+  | cd ../..                             | ...              |
+  | cd ../../..                          | ....             |
+  | cd ../../../..                       | .....            |
+  |                                      |                  |
+  | <b>Resume wget by default:</b>       |                  |
+  | wget -c                              | wget             |
+  |                                      |                  |
+  | <b>Restart network-manager:</b>      |                  |
+  | sudo service network-manager restart | net-restart      |
+  |                                      |                  |
+  | <b>Quicker apt commands:</b>         |                  |
+  | sudo apt update                      | update           |
+  | sudo apt upgrade                     | upgrade          |
+  | sudo apt install                     | a-install        |
+  |                                      |                  |
+  | <b>Using Anaconda with ROS:</b>      |                  |
+  | activate  anaconda environment       | release-the-snake| 
+  | deactivate  anaconda environment     | cage-the-snake   | 
