@@ -79,8 +79,7 @@ function _ROS_CONDA_ensureCondaInPath {
     # Unalias the stuff
     _ROS_CONDA_removeAliases
 
-    # add conda identifier to prompt
-    export PS1="\[\033[0;36m\][conda] $_PS1"
+    _UPDATE_PROMPT
 
     return 0 # true
   fi
@@ -105,8 +104,7 @@ function _ROS_CONDA_removeCondaFromPath {
     export PYTHONPATH=$_ROS_CONDA_PYTHONPATH_BACKUP
     _ROS_CONDA_addAliases
 
-    # remove conda identifier from prompt
-    export PS1="$_PS1"
+    _UPDATE_PROMPT
 
   fi 
 
@@ -146,6 +144,17 @@ then
   _ROS_CONDA_addAliases
 fi
 
+# add conda identifier to prompt
+function _UPDATE_PROMPT {
+  if [[  $PATH == $_ROS_CONDA_PATH":"* || $PATH == *":"$_ROS_CONDA_PATH || $PATH == *":"$_ROS_CONDA_PATH":"* ]]
+  then 
+    export PS1="\[\033[0;36m\][conda] $_PS1"
+  else
+    export PS1="$_PS1"
+  fi
+}
+
+_UPDATE_PROMPT
 alias source='_ROS_CONDA_sourceWrapper'
 alias release-the-snake='_ROS_CONDA_RELEASED_MANUALLY=1; if _ROS_CONDA_ensureCondaInPath; then echo "All hail the snake!"; else echo "The snake is in another castle!
 Jk, you released it already."; fi'
