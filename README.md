@@ -97,3 +97,4 @@ custom bashrc files and aliases
   ### Using Anaconda with ROS
   - As described before, this enables usage of anaconda for ROS users without running into conflicts.
   - Enable and disable *conda* environments via the aliases mentioned in the table above.
+  - Updates the prompt to add *conda* identifier.
