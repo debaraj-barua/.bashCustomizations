@@ -16,6 +16,6 @@ alias wget='wget -c'
 alias net-restart='sudo service network-manager restart'
 
 # apt update and upgrade
-alias update='sudo apt update'
-alias upgrade='sudo apt upgrade'
+alias a-update='sudo apt update'
+alias a-upgrade='sudo apt upgrade'
 alias a-install='sudo apt install'
