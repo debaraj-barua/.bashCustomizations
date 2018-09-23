@@ -17,7 +17,7 @@
   | sudo service network-manager restart | net-restart      |
   |                                      |                  |
   | <b>Quicker apt commands:</b>         |                  |
-  | sudo apt update                      | update           |
-  | sudo apt upgrade                     | upgrade          |
+  | sudo apt update                      | a-update         |
+  | sudo apt upgrade                     | a-upgrade        |
   | sudo apt install                     | a-install        |
   |                                      |                  |

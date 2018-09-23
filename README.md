@@ -37,7 +37,7 @@ custom bashrc files and aliases
   ```
 
   ## [Note] Using conda with ROS functionality
-  This has beent taken from [StefanFabian's gist](https://gist.github.com/StefanFabian/17fa715e783cd2be6a32cd5bbb98acd9#file-anaconda_with_ros_wrapper-bash)
+  This has been taken from [StefanFabian's gist](https://gist.github.com/StefanFabian/17fa715e783cd2be6a32cd5bbb98acd9#file-anaconda_with_ros_wrapper-bash)
 
   1. Remove the line that adds the anaconda bin folder to your PATH in the ~/.bashrc file (if you've let anaconda add itself to the PATH during installation)
   1. Change `_ROS_CONDA_PATH` in [conda_with_ros file](package_specific_functionalities/conda_with_ros.bash) _line 23_ to the path of your Anaconda bin folder (if you didn't install it to `~/anaconda3`)
@@ -68,8 +68,8 @@ custom bashrc files and aliases
   | sudo service network-manager restart | net-restart      |
   |                                      |                  |
   | <b>Quicker apt commands:</b>         |                  |
-  | sudo apt update                      | update           |
-  | sudo apt upgrade                     | upgrade          |
+  | sudo apt update                      | a-update         |
+  | sudo apt upgrade                     | a-upgrade        |
   | sudo apt install                     | a-install        |
   |                                      |                  |
   | <b>Using Anaconda with ROS:</b>      |                  |
