@@ -63,3 +63,17 @@ fi
 export PATH="$PATH:$HOME/npm/bin"
 export NODE_PATH="$NODE_PATH:$HOME/npm/lib/node_modules"
 
+## function to clean node project (delete package-lock.json & node_modules)
+_clean_node() {
+if [  -d node_modules/ ]; then
+  rm -rf node_modules/
+  echo deleted node_modules
+fi
+
+if [  -f package-lock.json ]; then
+  rm -rf package-lock.json
+  echo deleted package-lock.json
+fi
+}
+
+alias clean-node=_clean_node
