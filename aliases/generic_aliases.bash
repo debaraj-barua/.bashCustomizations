@@ -1,3 +1,6 @@
+## Source bashrc
+alias source-bash='source ~/.bashrc'
+
 ## get rid of command not found ##
 alias cd..='cd ..'
  
