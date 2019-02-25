@@ -29,7 +29,7 @@ Custom bashrc files and aliases.
   # bashCustomizations
 
   if [  -d "$HOME"/.bashCustomizations/ ]; then
-      # npm functionalities
+    # npm functionalities
     . "$HOME"/.bashCustomizations/package_specific_functionalities/bashrc_npm.bash
 
     # git functionalities
@@ -37,8 +37,12 @@ Custom bashrc files and aliases.
 
     # conda with ros functionalities
     . "$HOME"/.bashCustomizations/package_specific_functionalities/conda_with_ros.bash
+
     # generic aliases
     . "$HOME"/.bashCustomizations/aliases/generic_aliases.bash
+
+    # docker aliases
+  . "$HOME"/.bashCustomizations/aliases/docker_aliases.bash
   fi
   # ---------------------------------------------------------------------------------------
 
