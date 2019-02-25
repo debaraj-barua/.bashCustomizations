@@ -21,3 +21,6 @@ alias net-restart='sudo service network-manager restart'
 alias a-update='sudo apt update'
 alias a-upgrade='sudo apt upgrade'
 alias a-install='sudo apt install'
+
+# Gut Aliases 
+alias gut='echo ACCORDING TO MY GUT: && echo && git'
