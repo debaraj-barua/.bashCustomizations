@@ -7,9 +7,6 @@ function clean-docker () {
   docker ps -a || true
   (docker images -aq -f dangling=true | xargs --no-run-if-empty docker rmi) || true
   docker images -aq -f dangling=true || true
-  cat /proc/cpuinfo || true
-  (cat /proc/meminfo | grep Total) || true
-  /sbin/ifconfig || true
 }
 
 function dockerRunInteractive () {
