@@ -42,7 +42,10 @@ Custom bashrc files and aliases.
     . "$HOME"/.bashCustomizations/aliases/generic_aliases.bash
 
     # docker aliases
-  . "$HOME"/.bashCustomizations/aliases/docker_aliases.bash
+    . "$HOME"/.bashCustomizations/aliases/docker_aliases.bash
+
+    # shorten prompt alias
+    . "$HOME"/.bashCustomizations/aliases/shorterPrompt.bash
   fi
   # ---------------------------------------------------------------------------------------
 
@@ -92,6 +95,14 @@ Custom bashrc files and aliases.
   | <b>Using Anaconda with ROS:</b>      |                                                          |
   | activate  anaconda environment       | release-the-snake                                        |
   | deactivate  anaconda environment     | cage-the-snake                                           |
+  |                                      |                                                          |
+  | <b>Docker Aliases:</b>               |                                                          |
+  | Clean all docker containers          | clean-docker                                             |
+  | Run docker container interactively   | dockerRunInteractive                                     |
+  |                                      |                                                          |
+  | <b>Shorten Prompt:</b>               |                                                          |
+  | shorten prompt to `<user>:<pwd>`     | short-prompt                                             |
+  | deactivate  anaconda environment     | long-prompt                                              |
 
 ## Package Specific Functionalities
   
