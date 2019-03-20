@@ -68,41 +68,41 @@ Custom bashrc files and aliases.
 ## Aliases Defined
 
   | &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;&nbsp; &nbsp; &nbsp; &nbsp; &nbsp;&nbsp; &nbsp; &nbsp; &nbsp; &nbsp;&nbsp; &nbsp; &nbsp; &nbsp; &nbsp;&nbsp; &nbsp; &nbsp; &nbsp; &nbsp;&nbsp; &nbsp; &nbsp; &nbsp; &nbsp;&nbsp; Command  &nbsp; &nbsp; &nbsp; &nbsp;&nbsp; &nbsp; &nbsp; &nbsp; &nbsp;&nbsp; &nbsp; &nbsp; &nbsp; &nbsp;&nbsp; &nbsp; &nbsp; &nbsp; &nbsp;&nbsp; &nbsp; &nbsp; &nbsp; &nbsp;&nbsp; &nbsp; &nbsp; &nbsp; &nbsp;| &nbsp; &nbsp; &nbsp;&nbsp; &nbsp; &nbsp; Alias &nbsp; &nbsp;&nbsp; &nbsp; &nbsp; &nbsp; &nbsp;|
-  |--------------------------------------|----------------------------------------------------------|
-  | <b>Get rid of command not found:</b> |                                                          |
-  | cd..                                 | cd ..                                                    |
-  |                                      |                                                          |
-  | <b>Quicker change directory:</b>     |                                                          |
-  | cd ..                                | ..                                                       |
-  | cd ../..                             | ...                                                      |
-  | cd ../../..                          | ....                                                     |
-  | cd ../../../..                       | .....                                                    |
-  |                                      |                                                          |
-  | <b>Resume wget by default:</b>       |                                                          |
-  | wget -c                              | wget                                                     |
-  |                                      |                                                          |
-  | <b>Restart network-manager:</b>      |                                                          |
-  | sudo service network-manager restart | net-restart                                              |
-  |                                      |                                                          |
-  | <b>Quicker apt commands:</b>         |                                                          |
-  | sudo apt update                      | a-update                                                 |
-  | sudo apt upgrade                     | a-upgrade                                                |
-  | sudo apt install                     | a-install                                                |
-  |                                      |                                                          |
-  | <b>What does your gut say:</b>       |                                                          |
-  | gut                                  | echo ACCORDING TO MY GUT: && echo && git                 |
-  |                                      |                                                          |
-  | <b>Using Anaconda with ROS:</b>      |                                                          |
-  | activate  anaconda environment       | release-the-snake                                        |
-  | deactivate  anaconda environment     | cage-the-snake                                           |
-  |                                      |                                                          |
-  | <b>Docker Aliases:</b>               |                                                          |
-  | Clean all docker containers          | clean-docker                                             |
-  | Run docker container interactively   | dockerRunInteractive                                     |
-  |                                      |                                                          |
-  | <b>Shorten Prompt:</b>               |                                                          |
-  | shorten prompt to `<user>:<pwd>`     | short-prompt                                             |
-  | deactivate  anaconda environment     | long-prompt                                              |
+  |---------------------------------------|----------------------------------------------------------|
+  | <b>Get rid of command not found:</b>  |                                                          |
+  | cd..                                  | cd ..                                                    |
+  |                                       |                                                          |
+  | <b>Quicker change directory:</b>      |                                                          |
+  | cd ..                                 | ..                                                       |
+  | cd ../..                              | ...                                                      |
+  | cd ../../..                           | ....                                                     |
+  | cd ../../../..                        | .....                                                    |
+  |                                       |                                                          |
+  | <b>Resume wget by default:</b>        |                                                          |
+  | wget -c                               | wget                                                     |
+  |                                       |                                                          |
+  | <b>Restart network-manager:</b>       |                                                          |
+  | sudo service network-manager restart  | net-restart                                              |
+  |                                       |                                                          |
+  | <b>Quicker apt commands:</b>          |                                                          |
+  | sudo apt update                       | a-update                                                 |
+  | sudo apt upgrade                      | a-upgrade                                                |
+  | sudo apt install                      | a-install                                                |
+  |                                       |                                                          |
+  | <b>What does your gut say:</b>        |                                                          |
+  | gut                                   | echo ACCORDING TO MY GUT: && echo && git                 |
+  |                                       |                                                          |
+  | <b>Using Anaconda with ROS:</b>       |                                                          |
+  | activate  anaconda environment        | release-the-snake                                        |
+  | deactivate  anaconda environment      | cage-the-snake                                           |
+  |                                       |                                                          |
+  | <b>Docker Aliases:</b>                |                                                          |
+  | Clean all docker containers           | clean-docker                                             |
+  | Run docker container interactively    | dockerRunInteractive                                     |
+  |                                       |                                                          |
+  | <b>Shorten Prompt:</b>                |                                                          |
+  | shorten prompt `<user>:<pwd basename>`| short-prompt                                             |
+  | long prompt `<user>@host:<pwd>`       | long-prompt                                              |
 
 ## Package Specific Functionalities
   
