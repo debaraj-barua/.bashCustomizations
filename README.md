@@ -19,7 +19,7 @@ Custom bashrc files and aliases.
 - Clone the repository.
 
   ```bash
-  cd ~ && git clone git@github.com:debaraj-barua/.bashCustomizations.git
+  cd ~ && git clone https://github.com/debaraj-barua/.bashCustomizations.git
   ```
 
 - Add the lines below to your `.bashrc` file. If you do not need any functionality, comment or remove that particular line.
