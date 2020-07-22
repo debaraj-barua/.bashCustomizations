@@ -7,7 +7,7 @@ Custom bashrc files and aliases.
 - [Getting Started and Installation](#getting-started-and-installation)
   - [[Note] Using Conda with ROS Functionality](#note-using-conda-with-ros-functionality)
   - [[Note] Random](#note-random)
-- [How To Use?](#how-to-use)
+- [How To Use](#how-to-use)
   - [Aliases Defined](#aliases-defined)
   - [Package Specific Functionalities](#package-specific-functionalities)
     - [Git](#git)
@@ -103,6 +103,9 @@ Custom bashrc files and aliases.
   | <b>Shorten Prompt:</b>                |                                                          |
   | shorten prompt `<user>:<pwd basename>`| short-prompt                                             |
   | long prompt `<user>@host:<pwd>`       | long-prompt                                              |
+  |                                       |                                                          |
+  | <b>Node Aliases:</b>                  |                                                          |
+  | Clean npm project                     | clean-node                                               |
 
 ## Package Specific Functionalities
   
